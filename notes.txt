@@ -1,0 +1,6 @@
+-useState always accepts two values
+    the state variable thats based upon the initial value we pass into it- in this case, undefined
+    -a function definied as setSessionToken. setSessionToken is our means of changing the value
+
+
+    props are properties defined by a parent component
