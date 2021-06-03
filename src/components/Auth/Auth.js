@@ -15,7 +15,11 @@ const Auth = (props) => {
     }
 
     const button = () => {
-        return !login ? 'Login' : 'Signup'
+        return !login ? 'Already registered? Login' : 'Not registered? Signup'
+    }
+
+    const buttonTwo = () => {
+        return login ? 'Login' : 'Signup'
     }
 
     const loginToggle = (event) =>{
@@ -88,9 +92,9 @@ const Auth = (props) => {
                 <br />
                 <input type='password' id='password' value={password} onChange={(e) => setPassword(e.target.value)}/>
                 <br/>
-                <button onClick={loginToggle}>{button()}</button>
+                <button type='submit' onClick={handleSubmit}>{buttonTwo()}</button>
                 <br/>
-                <button type='submit' onClick={handleSubmit}>Submit User Data</button>
+                <button onClick={loginToggle}>{button()}</button>
             </form>
         </div>
     )
