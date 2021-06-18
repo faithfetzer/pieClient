@@ -30,40 +30,40 @@ const Pies = (props) => {
 
     const buttonHandler = () => setCreatePie(true);
 
-    const pie = [
-        {
-            nameOfPie: 'pumpkin',
-            baseOfPie: 'puree',
-            crust: 'pastry',
-            timeToBake: 50,
-            servings: 8,
-            rating: 5
-        },
-        {
-            nameOfPie: 'apple',
-            baseOfPie: 'fruit',
-            crust: 'graham cracker',
-            timeToBake: 80,
-            servings: 10,
-            rating: 5
-        },
-        {
-            nameOfPie: 'chess',
-            baseOfPie: 'chocolate',
-            crust: 'butter',
-            timeToBake: 40,
-            servings: 8,
-            rating: 5
-        },
-        {
-            nameOfPie: 'shephards',
-            baseOfPie: 'lamb',
-            crust: 'potato',
-            timeToBake: 90,
-            servings: 8,
-            rating: 3
-        },
-    ]
+    // const pie = [
+    //     {
+    //         nameOfPie: 'pumpkin',
+    //         baseOfPie: 'puree',
+    //         crust: 'pastry',
+    //         timeToBake: 50,
+    //         servings: 8,
+    //         rating: 5
+    //     },
+    //     {
+    //         nameOfPie: 'apple',
+    //         baseOfPie: 'fruit',
+    //         crust: 'graham cracker',
+    //         timeToBake: 80,
+    //         servings: 10,
+    //         rating: 5
+    //     },
+    //     {
+    //         nameOfPie: 'chess',
+    //         baseOfPie: 'chocolate',
+    //         crust: 'butter',
+    //         timeToBake: 40,
+    //         servings: 8,
+    //         rating: 5
+    //     },
+    //     {
+    //         nameOfPie: 'shephards',
+    //         baseOfPie: 'lamb',
+    //         crust: 'potato',
+    //         timeToBake: 90,
+    //         servings: 8,
+    //         rating: 3
+    //     },
+    // ]
     return(
         <>
             {createPie ? <CreatePie setCreatePie={setCreatePie} sessionToken={props.sessionToken}/> :null}
